@@ -1,0 +1,206 @@
+    /* customize css for Navbar.jsx */
+    .custom-border{
+        width: 100%;
+        border-radius: 30px;
+        padding: 10px;
+        background-color: rgba(91, 93, 95, 0.409);
+    }
+    .custom-dimens{
+        width: 30px;
+        height: 30px;
+    }
+    .custom_triangle{
+        width: 0;
+        height:0;
+        border-left:15px solid transparent;
+        border-right:15px solid transparent;
+        border-top: 30px solid rgba(102, 105, 108, 0.979);
+    }
+    
+    
+    /* customize css for MainImage.jsx */
+    
+    .custm-position{
+        position: relative
+    }
+    .custom-h{
+        max-width:100%;
+        height: 440px;
+    }
+    @media (max-width: 574px) {
+        .custom-h{
+        height: auto;
+        }
+    
+    }
+    .custm-position-bottom-left{
+        position: absolute;
+        bottom:15%;
+        left:10%;
+    }
+    .custm-position-top{
+        width: 80%;
+        position:absolute;
+        top:5%;
+        left:10%;
+    }
+   .grn{
+    color:#02B875;
+    width: 100%;
+
+   }
+   .orng{
+    color: #E56135
+   }
+   .tex{
+    font-size: 14px;
+   }
+
+   .modal-header {
+    border-radius: 8px 8px 0px 0px;
+    background: #EFFFF4;
+}
+
+
+
+.modal-title {
+    color: #008A45;
+    text-align: center;
+    font-family: IBM Plex Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    margin-left: 57px;
+}
+
+.heading {
+    color: #000;
+    font-family: IBM Plex Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+}
+
+.blue-text {
+    color: #3D3D3D;
+    text-align: right;
+    font-family: IBM Plex Sans;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 300px;
+}
+
+.form-control{
+    background: #F7F8FA;
+}
+
+.form-control:focus{
+    box-shadow: none;
+    border: 1px solid black;
+}
+
+.firstname {
+    color: #8A8A8A;
+    font-family: IBM Plex Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    width: 152px;
+    border-radius: 1px;
+    border-bottom: 0px;
+    margin-left: -15px;
+}
+
+.lastname {
+    color: #8A8A8A;
+    font-family: IBM Plex Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    width: 168px;
+    margin-left: -54px;
+    border-radius: 1px;
+    border-bottom: 0px;
+}
+
+
+
+
+.length {
+    color: #8A8A8A;
+    font-family: IBM Plex Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    margin-top: -16px;
+    width: 20pc;
+    border-radius: 1px;
+    border-bottom: 0px;
+}
+
+.length-confirm{
+    color: #8A8A8A;
+    font-family: IBM Plex Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    margin-top: -16px;
+    width: 20pc;
+    border-radius: 1px;
+    border-bottom: 1px solid #D9D9DB;
+
+}
+
+
+.create-account-button {
+    color: #FFF;
+    text-align: center;
+    font-family: IBM Plex Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+    width: 320px;
+    height: 40px;
+    border-radius: 20px;
+    background: #2F6CE5;
+}
+
+.sign-in-button
+{color: #FFF;
+    text-align: center;
+    font-family: IBM Plex Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+    width: 320px;
+    height: 40px;
+    border-radius: 20px;
+    background: #2F6CE5;}
+
+.length-form{
+    margin-top: 10px;
+}
+
+.length-pass{
+    color: #8A8A8A;
+    font-family: IBM Plex Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    margin-top: -16px;
+    width: 20pc;
+    border-radius: 1px;
+}

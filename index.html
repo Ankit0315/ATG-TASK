@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <title>Sample Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="custom.css"> You can add custom CSS here -->
+</head>
+
+<body>
+    <!-- for navbar -->
+    <div class='border container-fluid border p-4  '>
+        <div class="d-none d-sm-block px-xl-4 ">
+            <div class="d-flex justify-content-xxl-around justify-content-between align-items-sm-center">
+                <div class='align-content-center'>
+                    <h5>
+                        <!-- <span class='text-success'>ATG.</span>
+                        <span>W</span>
+                        <img src= './image/Union1.png' width='20px' height='20px' alt="Company Logo"/>
+                        <span>RLD</span> -->
+                        <img src="./Assest/whole.png" alt="imglogo">
+                    </h5>
+                </div>
+                <div>
+                    <div class="custom-border">
+                    <form class="form-inline my-2 my-lg-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                        </svg>
+                        <input 
+                        style="outline: none; border: none; padding-left: 6px; background-color: rgba(102, 105, 108, 0.080)"
+                        class=" mr-sm-2" type="search" placeholder="Search for your favorite group in ATG" aria-label="Search"/>
+                    </form>
+                    </div>
+                </div>
+                <div class='d-none d-md-block'>
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="modal"
+                            data-target="#createAccountModal">
+                            Create Account
+                            <span class="text-primary">It's Free!</span>
+                        </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+
+               
+              
+
+
+            </div>
+        </div>
+         <!-- modals -->
+        <!-- <div class="modal fade" id="staticBackdrop" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Create Account</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-lg-6 mb-5"> -->
+                                <!-- Left Section with Input Fields and Buttons -->
+                                <!-- <form id="accountForm">
+                                    <img src="./Assest/Group 3.png">
+                                    <button type="submit" class="btn btn-primary">Create Account</button>
+                                </form> -->
+                            <!-- </div>
+                            <div class="col-lg-6 mb-5"> -->
+                                <!-- Right Section with Image -->
+                                <!-- <img src="./Assest//img1.jpeg" alt="Image" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+    
+        
+        <!-- display in small screen  -->
+        <div class='d-block d-sm-none'>
+                <div class='d-flex gap-2 justify-content-end'>
+                <div class="rounded bg-secondary custom-dimens"></div>
+                <div class="rounded-circle bg-secondary custom-dimens"></div>
+                <div class="rounded custom_triangle" 
+                style="cursor: pointer;"
+                data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                ></div>
+                </div>
+        </div>
+    </div>   
+    
+    <!-- banner image -->
+    <div class="container-fluid px-0 custm-position bg-primary custom-h">
+        <img src= "./Assest/Rectangle 2.jpg" class="card-imgs h-100 w-100" />
+        <div class='d-flex justify-content-between custm-position-top d-block d-sm-none'>
+            <div class='text-light'>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                    <path fillRule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+                </svg>
+            </div>
+            <button class='btn btn-outline-light'>Join Group</button>
+        </div>
+        <div class='custm-position-bottom-left text-light tex'>
+            <h4>Computer Engineering</h4>
+            <p>142,765 Computer Engineers follow this</p>
+        </div>
+    </div>
+
+
+    <!-- website content -->
+    <div class='mx-auto col-sm-10 my-4 py-4'>
+        <div class="row">
+            <div class="col-12">
+                <!-- Details -->
+                <div class='d-none d-sm-block '>
+                    <div class="d-flex justify-content-between">
+                        <div class='d-flex gap-4'>
+                            <h5 class='text-dark'>All Posts(32)</h5>
+                            <h5 class='text-secondary d-md-block d-none'>Article</h5>
+                            <h5 class='text-secondary d-md-block d-none'>Event</h5>
+                            <h5 class='text-secondary d-md-block d-none'>Education</h5>
+                            <h5 class='text-secondary d-md-block d-none'>Job</h5>
+                        </div>
+                        <div class='d-flex  gap-md-4 gap-2'>
+                            <div class="dropdown d-lg-block d-none">
+                                <button class="btn btn-secondary px-4 dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Write a post
+                                </button>
+                            </div>
+                            <button class='btn btn-primary text-light'>
+        
+                                <span class='d-flex align-items-center'>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-plus-fill" viewBox="0 0 16 16">
+                                        <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                        <path fillRule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
+                                    </svg>
+                                    <span class='px-lg-2 px-1'>Join Group</span>
+                                </span>
+        
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+            <hr/>
+    
+        <div class="row py-4 ">
+            <div class="col-md-8">
+                <!-- first card -->
+            <div class="col-md-12">
+                <div class="card" >
+                    <img src= './Assest/clouds.png' style="height: 220px;"  class="card-img-top" alt="..."/>
+                    <div class="card-body">
+                        <h5 class='my-4'>✍️ Article</h5>
+                        <div class="row">
+                            <div class="col-10">
+                                <h4>What if famous brands had regular fonts? Meet RegulaBrands!</h4>
+                            </div>
+                            <div class="col-2">
+                                <div class="dropdown">
+                                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        ...
+                                    </a>
+
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                                        <li><a class="dropdown-item" href="#">Report</a></li>
+                                        <li><a class="dropdown-item" href="#">Option 3</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <p class='my-2'>I’ve worked in UX for the better part of a decade. From now on, I plan to rei…</p>
+                            </div>
+                        </div>       
+                        <div class="row">
+                            <div class="col-2">
+                                <img class='rounded rounded-pill' src='./Assest/Rectangle 3 (2).png' style='width:50px; height:50px;' alt="" />
+                            </div>
+
+                            <div class="col-6 d-flex align-items-center">
+                                <p>Sarthak Kamra</p>
+                            </div>
+
+                            <div class="col-2">
+                                <p>1.4k views</p>
+                            </div>
+
+                            <div class="col-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
+                                    <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
+                                </svg>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+            <!-- second card -->
+            <div class="col-md-12">
+                <div class="card" >
+                    <img src= './Assest/Rectangle 5.png' style="height: 220px;"  class="card-img-top" alt="..."/>
+                    <div class="card-body">
+                        <h5 class='my-4'>🔬️ Education</h5>
+                        <div class="row">
+                            <div class="col-10">
+                                <h4>Tax Benefits for Investment under National Pension Scheme launched by Government</h4>
+                            </div>
+                            <div class="col-2">
+                                <div class="dropdown">
+                                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        ...
+                                    </a>
+
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                                        <li><a class="dropdown-item" href="#">Report</a></li>
+                                        <li><a class="dropdown-item" href="#">Option 3</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <p class='my-2'>I’ve worked in UX for the better part of a decade. From now on, I plan to rei…</p>
+                            </div>
+                        </div>       
+                        <div class="row">
+                            <div class="col-2">
+                                <img class='rounded rounded-pill' src='./Assest/person.jpeg' style='width:50px; height:50px;' alt="" />
+                            </div>
+
+                            <div class="col-6 d-flex align-items-center">
+                                <p>Sarah West</p>
+                            </div>
+
+                            <div class="col-2">
+                                <p>1.4k views</p>
+                            </div>
+
+                            <div class="col-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
+                                    <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
+                                </svg>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Third card -->
+            <div class="col-md-12">
+                <div class="card" >
+                    <img src= './Assest/car.png' style="height: 220px;"  class="card-img-top" alt="..."/>
+                    <div class="card-body">
+                        <h5 class='my-4'>🗓️ Meetup</h5>
+                        <div class="row">
+                            <div class="col-10">
+                                <h4>Finance & Investment Elite Social Mixer @Lujiazui</h4>
+                            </div>
+                            <div class="col-2">
+                                <div class="dropdown">
+                                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        ...
+                                    </a>
+
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                                        <li><a class="dropdown-item" href="#">Report</a></li>
+                                        <li><a class="dropdown-item" href="#">Option 3</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        
+                        <div class="row my-2">
+                            <div class="col-6 col-lg-4">
+                                    <p><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_1_895)">
+                                        <path d="M15.8333 2.49992H15V0.833252H13.3333V2.49992H6.66667V0.833252H5V2.49992H4.16667C3.24167 2.49992 2.50833 3.24992 2.50833 4.16659L2.5 15.8333C2.5 16.7499 3.24167 17.4999 4.16667 17.4999H15.8333C16.75 17.4999 17.5 16.7499 17.5 15.8333V4.16659C17.5 3.24992 16.75 2.49992 15.8333 2.49992ZM15.8333 15.8333H4.16667V6.66658H15.8333V15.8333ZM5.83333 8.33325H10V12.4999H5.83333V8.33325Z" fill="black"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_1_895">
+                                        <rect width="20" height="20" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                        </svg>
+                                    <b>Fri, 12 Oct, 2018</b> </p>
+                            </div>
+                            <div class="col-6 col-lg-6">
+                                    <p> <b><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_1_886)">
+                                        <path d="M9.99996 1.66675C6.77496 1.66675 4.16663 4.27508 4.16663 7.50008C4.16663 11.8751 9.99996 18.3334 9.99996 18.3334C9.99996 18.3334 15.8333 11.8751 15.8333 7.50008C15.8333 4.27508 13.225 1.66675 9.99996 1.66675ZM5.83329 7.50008C5.83329 5.20008 7.69996 3.33342 9.99996 3.33342C12.3 3.33342 14.1666 5.20008 14.1666 7.50008C14.1666 9.90008 11.7666 13.4918 9.99996 15.7334C8.26663 13.5084 5.83329 9.87508 5.83329 7.50008Z" fill="black"/>
+                                        <path d="M9.99996 9.58341C11.1506 9.58341 12.0833 8.65067 12.0833 7.50008C12.0833 6.34949 11.1506 5.41675 9.99996 5.41675C8.84937 5.41675 7.91663 6.34949 7.91663 7.50008C7.91663 8.65067 8.84937 9.58341 9.99996 9.58341Z" fill="black"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_1_886">
+                                        <rect width="20" height="20" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                        </svg>
+                                       Ahmedabad, India</b></p>
+                            </div>
+                        </div>
+                        <div class="row my-2">
+                            <div class="col-12 d-grid">
+                            <button type="button" class="btn btn-lg btn-block btn-outline-secondary orng">Visit Website</button>
+                            </div>
+                        </div>        
+                        <div class="row">
+                            <div class="col-2">
+                                <img class='rounded rounded-pill' src='./Assest/Rectangle 3.png' style='width:50px; height:50px;' alt="" />
+                            </div>
+
+                            <div class="col-6 d-flex align-items-center">
+                                <p><b>Ronal Jones</b></p>
+                            </div>
+
+                            <div class="col-2">
+                                <p>1.4k views</p>
+                            </div>
+
+                            <div class="col-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
+                                    <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
+                                </svg>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- last card -->
+
+            <div class="col-md-12">
+                <div class="card" >
+                    <!-- <img src= './Assest/car.png' style="height: 220px;"  class="card-img-top" alt="..."/> -->
+                    <div class="card-body">
+                        <h5 class='my-4'>💼️ Job</h5>
+                        <div class="row">
+                            <div class="col-10">
+                                <h4>Software Developer</h4>
+                                
+                            </div>
+                            <div class="col-2">
+                                <div class="dropdown">
+                                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        ...
+                                    </a>
+
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Edit</a></li>
+                                        <li><a class="dropdown-item" href="#">Report</a></li>
+                                        <li><a class="dropdown-item" href="#">Option 3</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        
+                        <div class="row my-2">
+                            <div class="col-6 col-lg-4">
+                                <p><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_1_941)">
+                                    <path d="M11.6667 5.00008V3.33341H8.33342V5.00008H11.6667ZM3.33341 6.66675V15.8334H16.6667V6.66675H3.33341ZM16.6667 5.00008C17.5917 5.00008 18.3334 5.74175 18.3334 6.66675V15.8334C18.3334 16.7584 17.5917 17.5001 16.6667 17.5001H3.33341C2.40841 17.5001 1.66675 16.7584 1.66675 15.8334L1.67508 6.66675C1.67508 5.74175 2.40841 5.00008 3.33341 5.00008H6.66675V3.33341C6.66675 2.40841 7.40841 1.66675 8.33342 1.66675H11.6667C12.5917 1.66675 13.3334 2.40841 13.3334 3.33341V5.00008H16.6667Z" fill="black"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_1_941">
+                                    <rect width="20" height="20" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                    </svg>
+                                    Innovaccer Analytics Private Ltd.</p>
+                            </div>
+                            <div class="col-6 col-lg-6">
+                                    <p> <b><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_1_886)">
+                                        <path d="M9.99996 1.66675C6.77496 1.66675 4.16663 4.27508 4.16663 7.50008C4.16663 11.8751 9.99996 18.3334 9.99996 18.3334C9.99996 18.3334 15.8333 11.8751 15.8333 7.50008C15.8333 4.27508 13.225 1.66675 9.99996 1.66675ZM5.83329 7.50008C5.83329 5.20008 7.69996 3.33342 9.99996 3.33342C12.3 3.33342 14.1666 5.20008 14.1666 7.50008C14.1666 9.90008 11.7666 13.4918 9.99996 15.7334C8.26663 13.5084 5.83329 9.87508 5.83329 7.50008Z" fill="black"/>
+                                        <path d="M9.99996 9.58341C11.1506 9.58341 12.0833 8.65067 12.0833 7.50008C12.0833 6.34949 11.1506 5.41675 9.99996 5.41675C8.84937 5.41675 7.91663 6.34949 7.91663 7.50008C7.91663 8.65067 8.84937 9.58341 9.99996 9.58341Z" fill="black"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_1_886">
+                                        <rect width="20" height="20" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                        </svg>
+                                        Noida, India</b></p>
+                            </div>
+                        </div>
+                        <div class="row my-2">
+                            <div class="col-12 d-grid">
+                            <button type="button" class="btn btn-lg  btn-outline-secondary btn-light grn ">Apply on Timesjobs</button>
+                            </div>
+                        </div>        
+                        <div class="row">
+                            <div class="col-2">
+                                <img class='rounded rounded-pill' src='./Assest/Rectangle 3 (1).png' style='width:50px; height:50px;' alt="" />
+                            </div>
+
+                            <div class="col-6 d-flex align-items-center">
+                                <p><b>Joseph Gray</b></p>
+                            </div>
+
+                            <div class="col-2">
+                                <p>1.4k views</p>
+                            </div>
+
+                            <div class="col-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
+                                    <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
+                                </svg>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+
+            <div class="col-md-3 col-sm-4 d-none d-md-block">
+
+
+                <!-- here is location file -->
+                <div class='row'>
+                    <div class='col-9'>
+                        <h6>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                            </svg>
+                        </span>
+                        Noida,India</h6>
+                    </div>
+        
+                    <div class="col-3">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                                <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
+                            </svg>
+                        </span>
+                    </div>
+        
+                </div>        
+                <hr />       
+                <div class="row">
+                    <div class="col-12">
+                        <p class='h7'>
+                            <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z"/>
+                            </svg>
+                            </span>
+                            Your location will help us serve better and extend a personalised experience</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- modl -->
+    <div class="modal" id="createAccountModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" style="max-width: 736px; height: 50px; margin-top: 100px;" role="document">
+            <div class="modal-content">
+                <!-- Add a green background and your text here -->
+                <div class="modal-header">
+
+                    <h5 class="modal-title">Let's learn, share & inspire each other with our passion for computer
+                        engineering. Sign up now 🤘🏼</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="heading">
+                        <h2>Create Account</h2>
+                        <span class="blue-text">Already have an account? <a href="#" style="color: blue;">Sign
+                                In</a></span>
+                    </div>
+                    <img src="./Assest/2.jpg" alt="Image" style="float: right; width: 310px; height: 280px; margin-left: 10px;">
+
+                    <!-- Form fields using Bootstrap grid classes -->
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control firstname" id="firstName" name="firstName"
+                                        placeholder="First Name" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control lastname" id="lastName" name="lastName"
+                                        placeholder="Last Name" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control length" id="email" name="email" placeholder="Email"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control length" id="password" name="password"
+                                placeholder="Password" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control length-confirm" id="confirmPassword"
+                                name="confirmPassword" placeholder="Confirm Password" required>
+                        </div>
+                        <div class="form-group">
+                            <button type="button" class="btn create-account-button">Create Account</button>
+                        </div>
+                    </form>
+
+                    <div class="rectangular-box"
+                        style="width: 320px; height: 38px; flex-shrink: 0; border-radius: 2px; border: 0.6px solid #D9D9DB; background: #FFF; display: flex; align-items: center; margin-bottom: 10px;">
+                        <img src="./Assest/f_logo_RGB-Blue_1024.png" alt="Facebook Logo"
+                            style="width: 16px; height: 16px; flex-shrink: 0; margin-right: 10px; margin-left: 62px;">
+                        <span
+                            style="color: #000; font-family: 'IBM Plex Sans', sans-serif; font-size: 14px; font-style: normal; font-weight: 400; line-height: 16px; text-align: center;">Sign
+                            up with Facebook</span>
+                    </div>
+                    <div class="rectangular-box"
+                        style="width: 320px; height: 38px; flex-shrink: 0; border-radius: 2px; border: 0.6px solid #D9D9DB; background: #FFF; display: flex; align-items: center;">
+                        <img src="./Assest/search.png" alt="Google Logo"
+                            style="width: 16px; height: 16px; flex-shrink: 0; margin-right: 10px; margin-left: 62px;">
+                        <span
+                            style="color: #000; font-family: 'IBM Plex Sans', sans-serif; font-size: 14px; font-style: normal; font-weight: 400; line-height: 16px; text-align: center;">Sign
+                            up with Google</span>
+
+                    </div>
+                    <div style="color: #000; font-family: 'IBM Plex Sans', sans-serif; font-size: 11px; font-style: normal; font-weight: 400; line-height: 16px; letter-spacing: -0.088px; width: 317px; opacity: 0.6; text-align: right; margin-top: -6px;
+                    margin-left: 366px;">
+                        By signing up, you agree to our Terms & conditions, Privacy policy
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="signInModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" style="max-width: 736px; height: 50px; margin-top: 100px;" role="document">
+            <div class="modal-content">
+                <!-- Add a green background and your text here -->
+                <div class="modal-header">
+                    <h5 class="modal-title">Let's learn, share & inspire each other with our passion for computer
+                        engineering. Sign in now 🤘🏼</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="heading">
+                        <h2>Sign In</h2>
+                        <span class="blue-text" style="margin-left: 368px;">Don't have an account? <a href="#"
+                                style="color: blue;">Create new for
+                                free!</a></span>
+                    </div>
+                    <img src="./Assest/2.jpg" alt="Image" style="float: right; width: 310px; height: 280px; margin-left: 10px;">
+
+                    <!-- Form fields using Bootstrap grid classes -->
+                    <form>
+                        <div class="form-group">
+                            <input type="email" class="form-control length length-form" id="signInEmail"
+                                name="signInEmail" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control length-pass" id="signInPassword"
+                                name="signInPassword" placeholder="Password" required>
+                        </div>
+
+                        <div class="form-group">
+                            <button type="button" class="btn sign-in-button">Sign In</button>
+                        </div>
+                    </form>
+                    <div class="rectangular-box"
+                        style="width: 320px; height: 38px; flex-shrink: 0; border-radius: 2px; border: 0.6px solid #D9D9DB; background: #FFF; display: flex; align-items: center; margin-bottom: 10px;">
+                        <img src="./Assest/f_logo_RGB-Blue_1024.png" alt="Facebook Logo"
+                            style="width: 16px; height: 16px; flex-shrink: 0; margin-right: 10px; margin-left: 62px;">
+                        <span
+                            style="color: #000; font-family: 'IBM Plex Sans', sans-serif; font-size: 14px; font-style: normal; font-weight: 400; line-height: 16px; text-align: center;">Sign
+                            up with Facebook</span>
+                    </div>
+                    <div class="rectangular-box"
+                        style="width: 320px; height: 38px; flex-shrink: 0; border-radius: 2px; border: 0.6px solid #D9D9DB; background: #FFF; display: flex; align-items: center;">
+                        <img src="./Assest/search.png" alt="Google Logo"
+                            style="width: 16px; height: 16px; flex-shrink: 0; margin-right: 10px; margin-left: 62px;">
+                        <span
+                            style="color: #000; font-family: 'IBM Plex Sans', sans-serif; font-size: 14px; font-style: normal; font-weight: 400; line-height: 16px; text-align: center;">Sign
+                            up with Google</span>
+
+
+                    </div>
+                    <div
+                        style="text-align: right; margin-top: 10px; text-align: center; margin-top: 21px; margin-left: -67px;">
+                        <a href="#" style="color: #000;
+                        text-align: center;
+                        font-family: IBM Plex Sans;
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 16px; /* 133.333% */
+                        letter-spacing: -0.096px;">Forgot password?</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+<script>
+     const createAccountModal = document.getElementById('createAccountModal');
+        const signInModal = document.getElementById('signInModal');
+
+        // Get the link elements
+        const signInLink = document.querySelector('#createAccountModal .blue-text a');
+        const createAccountLink = document.querySelector('#signInModal .blue-text a');
+
+        // Function to open the Sign In modal
+        function openSignInModal() {
+            createAccountModal.style.display = 'none';
+            signInModal.style.display = 'block';
+        }
+
+        // Function to open the Create Account modal
+        function openCreateAccountModal() {
+            signInModal.style.display = 'none';
+            createAccountModal.style.display = 'block';
+        }
+
+        // Add event listeners
+        signInLink.addEventListener('click', openSignInModal);
+        createAccountLink.addEventListener('click', openCreateAccountModal);
+
+
+</script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   </body>
+</html>
